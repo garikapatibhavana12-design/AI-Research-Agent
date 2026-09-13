@@ -1,0 +1,52 @@
+ARTIFICIAL INTELLIGENCE
+
+Artificial Intelligence is a branch of computer science that enables machines
+to perform tasks that normally require human intelligence.
+
+Important areas of Artificial Intelligence include Machine Learning,
+Deep Learning, Natural Language Processing, Computer Vision, and Robotics.
+
+Artificial Intelligence is used in healthcare, education, finance,
+transportation, cybersecurity, and scientific research.
+
+
+MACHINE LEARNING
+
+Machine Learning is a branch of Artificial Intelligence that enables
+computer systems to learn patterns from data.
+
+The main types of Machine Learning are supervised learning,
+unsupervised learning, and reinforcement learning.
+
+Machine Learning applications include recommendation systems,
+fraud detection, image recognition, and predictive analytics.
+
+
+PYTHON
+
+Python is a high-level programming language known for its simple syntax
+and readability.
+
+Python is widely used in Artificial Intelligence, Machine Learning,
+Data Science, Web Development, and Automation.
+
+Popular Python libraries include NumPy, Pandas, Matplotlib,
+Scikit-learn, TensorFlow, and Flask.
+
+
+NATURAL LANGUAGE PROCESSING
+
+Natural Language Processing, also called NLP, enables computers
+to understand and process human language.
+
+NLP is used in chatbots, translation systems, sentiment analysis,
+speech recognition, and text summarization.
+
+
+COMPUTER VISION
+
+Computer Vision enables computers to understand and analyze
+images and videos.
+
+Applications include face recognition, medical image analysis,
+autonomous vehicles, and object detection.

@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    ```
+    <title>AI Research Report</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    ```
+  </head>
+
+  <body>
+    ```
+    <div class="container">
+      <h1>📊 AI Research Report</h1>
+
+      <!-- Original Query -->
+      <div class="card">
+        <h2>💬 Original Query</h2>
+
+        <p>{{ user_prompt }}</p>
+      </div>
+
+      <!-- Prompt Analysis -->
+      <div class="card">
+        <h2>🔍 Prompt Analysis</h2>
+
+        <p>
+          <strong>Word Count:</strong>
+          {{ analysis.word_count }}
+        </p>
+
+        <p>
+          <strong>Query Type:</strong>
+          {{ analysis.query_type }}
+        </p>
+
+        <p>
+          <strong>Complexity:</strong>
+          {{ analysis.complexity }}
+        </p>
+
+        <p>
+          <strong>Keywords:</strong>
+          {{ analysis.keywords }}
+        </p>
+      </div>
+
+      <!-- Refined Prompt -->
+      <div class="card">
+        <h2>✨ Refined Prompt</h2>
+
+        <p>{{ refined_prompt }}</p>
+      </div>
+
+      <!-- Research Results -->
+      <div class="card">
+        <h2>📚 Research Results</h2>
+
+        <pre>{{ research_result }}</pre>
+      </div>
+      <!-- Semantic Search Results -->
+
+      {% if semantic_results %}
+
+      <div class="card">
+        ```
+        <h2>🧠 Semantic Search Results</h2>
+
+        <p>
+          The AI Research Agent retrieved the most relevant document sections
+          using vector similarity search.
+        </p>
+
+        {% for result in semantic_results %}
+
+        <div class="semantic-result">
+          <h3>📄 Relevant Document Chunk {{ loop.index }}</h3>
+
+          <p>{{ result.content }}</p>
+
+          <p>
+            <strong>Similarity Score:</strong>
+            {{ result.score }}
+          </p>
+        </div>
+
+        {% endfor %} ```
+      </div>
+
+      {% endif %}
+
+      <!-- Research Summary -->
+      <div class="card">
+        <h2>📝 Research Summary</h2>
+
+        <pre>{{ summary }}</pre>
+      </div>
+
+      <!-- Research Statistics Dashboard -->
+      <div class="card">
+        <h2>📊 Research Statistics</h2>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h3>📝 Words</h3>
+            <p>{{ evaluation.word_count }}</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>🔤 Characters</h3>
+            <p>{{ evaluation.character_count }}</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>📄 Sentences</h3>
+            <p>{{ evaluation.sentence_count }}</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>⭐ Quality</h3>
+            <p>{{ evaluation.quality }}</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>🎯 Score</h3>
+            <p>{{ evaluation.score }}</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>✅ Status</h3>
+            <p>{{ evaluation.status }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back Button -->
+      <a href="/" class="back-button"> ← Start New Research </a>
+    </div>
+    ```
+  </body>
+</html>

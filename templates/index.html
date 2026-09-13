@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    ```
+    <title>AI Research Agent</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    ```
+  </head>
+
+  <body>
+    ```
+    <div class="container">
+      <!-- Project Header -->
+      <div class="hero">
+        <h1>🤖 AI Research Agent</h1>
+
+        <p class="subtitle">
+          Intelligent Research, Retrieval and Report Generation Assistant
+        </p>
+
+        <div class="badge-container">
+          <span class="badge">🔍 Smart Analysis</span>
+          <span class="badge">📚 Knowledge Retrieval</span>
+          <span class="badge">📄 Document Analysis</span>
+          <span class="badge">📝 Summarization</span>
+          <span class="badge">📊 Evaluation</span>
+        </div>
+      </div>
+
+      <!-- Research Input -->
+      <div class="card research-card">
+        <h2>🔍 Start Your Research</h2>
+
+        <p>
+          Enter a research topic and let the AI Research Agent analyze,
+          retrieve, summarize, and evaluate relevant information.
+        </p>
+
+        <!-- Research Form -->
+        <form method="POST" enctype="multipart/form-data">
+          <textarea
+            name="prompt"
+            placeholder="Example: Explain Artificial Intelligence and its applications"
+            required
+          ></textarea>
+
+          <!-- Document Upload -->
+          <div class="upload-section">
+            <label for="document">
+              📄 Upload Research Document (Optional)
+            </label>
+
+            <input
+              type="file"
+              id="document"
+              name="document"
+              accept=".txt,.pdf"
+            />
+
+            <p class="upload-info">Supported formats: .txt, .pdf</p>
+          </div>
+
+          <button type="submit">🚀 Start Research</button>
+        </form>
+      </div>
+
+      <!-- Features -->
+      <div class="features-grid">
+        <div class="feature-box">
+          <h3>🔍 Analyze</h3>
+
+          <p>
+            Extracts keywords, identifies query type, and measures research
+            complexity.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📚 Retrieve</h3>
+
+          <p>
+            Searches the knowledge base and ranks relevant information using
+            relevance scoring.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📄 Document Analysis</h3>
+
+          <p>
+            Extracts research information from uploaded TXT and PDF documents.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📝 Summarize</h3>
+
+          <p>
+            Organizes important research information into a concise summary.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📊 Evaluate</h3>
+
+          <p>
+            Evaluates research output using words, characters, sentences, and
+            quality metrics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Research Pipeline -->
+      <div class="card">
+        <h2>⚙️ AI Research Pipeline</h2>
+
+        <div class="pipeline">
+          <span>User Query</span>
+          <span>→</span>
+
+          <span>Analysis</span>
+          <span>→</span>
+
+          <span>Refinement</span>
+          <span>→</span>
+
+          <span>TXT/PDF Upload</span>
+          <span>→</span>
+
+          <span>Text Extraction</span>
+          <span>→</span>
+
+          <span>Retrieval</span>
+          <span>→</span>
+
+          <span>Summarization</span>
+          <span>→</span>
+
+          <span>Evaluation</span>
+        </div>
+      </div>
+
+      <!-- Research History -->
+      {% if research_history %}
+
+      <div class="card">
+        <h2>🕒 Recent Research</h2>
+
+        <ul class="history-list">
+          {% for query in research_history %}
+
+          <li>🔍 {{ query }}</li>
+
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% endif %}
+
+      <!-- Developer Footer -->
+      <div class="developer-footer">
+        <p>
+          Developed by
+          <strong>Garikapati Bhavana</strong>
+          © 2026
+        </p>
+
+        <p>
+          🤖 AI Research Agent | Python • Flask • PDF Processing • Information
+          Retrieval
+        </p>
+      </div>
+    </div>
+    ```
+  </body>
+</html>
