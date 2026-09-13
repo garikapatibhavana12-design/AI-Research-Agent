@@ -4,7 +4,13 @@
 
 An AI-powered research assistant built using Python and Flask. The application analyzes user queries, refines prompts, retrieves relevant information from a knowledge base, summarizes research results, and evaluates the generated response.
 
----
+🚀 Live Demo
+
+🌐 Live Application: https://ai-research-agent-hho7.onrender.com
+
+💻 GitHub Repository
+
+🔗 https://github.com/garikapatibhavana12-design/AI-Research-Agent
 
 ## 🚀 Features
 
